@@ -1,0 +1,5 @@
+-- # Write your MySQL query statement below
+SELECT MAX(x1.num) as num from (
+    SELECT  num  FROM MYNUMBERS GROUP BY NUM HAVING COUNT(NUM)=1 ORDER BY NUM) x1 
+    --  SELECT  num, COUNT(NUM) FROM MYNUMBERS GROUP BY NUM HAVING COUNT(NUM)=1 ORDER BY NUM
+    
