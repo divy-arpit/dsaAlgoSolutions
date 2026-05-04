@@ -1,0 +1,2 @@
+# Write your MySQL query statement below
+SELECT activity_date AS day, COUNT(DISTINCT(user_id)) as active_users from ACTIVITY GROUP BY ACTIVITY_DATE HAVING ACTIVITY_DATE>="2019-06-28" AND ACTIVITY_DATE<="2019-07-27"
